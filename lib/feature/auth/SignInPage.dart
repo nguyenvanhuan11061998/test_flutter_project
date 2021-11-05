@@ -84,6 +84,7 @@ class _SingInPageState extends State<SingInPage> {
                   onTap: () {
 
                   },
+                  // huannv
                 ),
                 Flexible(child: Container(),flex: 1,)
               ],
