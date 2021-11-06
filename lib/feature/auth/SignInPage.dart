@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
-import 'package:async/async.dart';
+import 'package:test_flutter_project/feature/home/HomeScreen.dart';
 
 class SingInPage extends StatefulWidget {
   @override
@@ -82,7 +82,7 @@ class _SingInPageState extends State<SingInPage> {
                     ),
                   ),
                   onTap: () {
-
+                    _openHomeScreen();
                   },
                   // huannv
                 ),
@@ -95,4 +95,9 @@ class _SingInPageState extends State<SingInPage> {
       ),
     );
   }
+
+  void _openHomeScreen() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+  }
 }
+
